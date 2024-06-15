@@ -19,6 +19,7 @@ body {
     background-color: #333;
     padding: 10px;
     display: flex; /* Enable flexbox for the tabs */
+    justify-content: flex-end; /* Align tabs to the right */
 }
 
 .tab {
@@ -27,7 +28,7 @@ body {
     border-radius: 5px 5px 0 0;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-right: 15px; /* Add spacing between tabs */
+    margin-left: 15px; /* Add spacing between tabs */
 }
 
 .tab.active {
@@ -35,14 +36,23 @@ body {
 }
 
 /* Tab Content Styling */
-.tab-content {
-    display: none;
+.container { /* Style the container instead of .tab-content */
+    display: block; /* Use block display for the container */
     padding: 20px;
     background-color: #333;
     border: 1px solid #555;
     border-top: none;
 }
 
+.tab-content {
+    display: none;
+    padding: 20px;
+}
+
 .tab-content.active {
     display: block;
+}
+
+a {
+  color: white; /* Set the link text color to white */
 }
