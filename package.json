@@ -1,11 +1,10 @@
 {
   "dependencies": {
     "express": "^4.19.2"
-    
   },
   "scripts": {
-  "start": "node index.js",
-  "build": "webpack",
-  "test": "jest"
-}
+    "start": "node index.js",
+    "build": "webpack",
+    "test": "jest"
+  }
 }
