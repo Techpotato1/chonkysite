@@ -7,6 +7,7 @@ body {
     min-height: 100vh;
     background-color: #222;
     color: #eee;
+    
 }
 
 .container {
@@ -25,14 +26,25 @@ body {
 .tab {
     padding: 10px 20px;
     background-color: #444;
-    border-radius: 5px 5px 0 0;
+    border-radius: 5px; /* Makes all corners rounded */
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-left: 15px; /* Add spacing between tabs */
+    margin-left: 15px; 
 }
+
 
 .tab.active {
     background-color: #555;
+}
+
+.tab:hover{
+    transform: scale(1.1); /* Scale up slightly */
+    transition: transform 0.3s ease; 
+}
+
+.tab:not(:hover) { /* When not hovering */
+    transform: scale(1);   /* Return to original size */
+    transition: transform 0.5s ease-out; /* Smooth ease-out transition */
 }
 
 /* Tab Content Styling */
@@ -55,4 +67,12 @@ body {
 
 a {
   color: white; /* Set the link text color to white */
+}
+
+a:hover {
+    color: aquamarine; /* Or another color of your choice */
+}
+
+p{
+    font-weight: 400 !important;
 }
