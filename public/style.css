@@ -17,9 +17,11 @@ body {
 /* Tab Styling */
 .tabs {
     background-color: #023047;
-    padding: 10px;
+    padding: 5px;
     display: flex; /* Enable flexbox for the tabs */
     justify-content: flex-end; /* Align tabs to the right */
+    align-items: top;
+    position: relative;
 }
 
 .tab {
@@ -29,6 +31,7 @@ body {
     cursor: pointer;
     transition: background-color 0.3s;
     margin-left: 15px; 
+    height: 20px;
 }
 
 
@@ -79,4 +82,16 @@ p{
 .my-image {
     position: absolute;
     z-index: 1; 
+}
+
+h1{
+    color: white;
+    font-size: 75px;
+    position: absolute;
+    left: 10px;
+    /* Adjust as needed */
+    top: 50%;
+    /* Adjust as needed */
+    transform: translateY(-50%);
+    /* Vertically centers the text */
 }
