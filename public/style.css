@@ -116,11 +116,10 @@ button {
   font-weight: 500;
   color: black;
   background-color: white;
-  margin: 5px; /* Add margin to create space between buttons */
+  margin: 7px; /* Add margin to create space between buttons */
 }
 
 button:hover {
- box-shadow: 0px 0px 10px white;
  transform: scale(1.07);
  cursor: pointer;
 }
