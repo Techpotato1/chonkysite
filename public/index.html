@@ -15,24 +15,19 @@
 <body>
 
     <div class="navbar">
-        <div class="title">Step Support</div>
+        <div class="title" onclick="openTab(event, 'tab1')">Step Support</div>
         <div class="tabs">
-            <button class="" onclick="openTab(event, 'tab1')">Home</button>
-            <button class="" onclick="openTab(event, 'tab3')">Contact</button>
-            <button class="" onclick="openTab(event, 'tab4')">Process</button>
-            <button class="" onclick="openTab(event, 'tab5')">Schedule</button>
-            <button class="" onclick="openTab(event, 'tab6')">Past Projects</button>
-            <button class="" onclick="openTab(event, 'tab7')">Team</button>
+            <button class="tab_button" onclick="openTab(event, 'tab3')">Contact</button>
         </div>
     </div>
 
-    <div class="container" style="background-image: url('images/IMG_0972.png')">
+    <div class="container">
         <!--
         The amount of pain to get this bg image to work ;(
         -->
-        <div id="tab1" class="tab-content active">
-            <h1 style="text-align: left; font-size: 60px;">Our Mission:</h1>
-            <p class="dynamic-width-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        <div id="tab1" class="tab-content active" style="text-align: left;">
+            <h1 style="text-align: left; font-size: 60px;">Who are we?</h1>
+            <p class="dynamic-width-paragraph" style="margin-bottom: 100px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                 et dolore magna
                 aliqua. Morbi non arcu risus quis varius quam. Malesuada bibendum arcu vitae elementum curabitur
                 vitae nunc sed. Nibh
@@ -71,8 +66,52 @@
                 aliquam ultrices sagittis orci. Posuere lorem ipsum dolor sit amet consectetur. Aliquam purus sit
                 amet luctus venenatis.
                 Congue eu consequat ac felis donec et odio pellentesque.</p>
+            <h1 style="text-align: left; font-size: 60px;;">What's our process?</h1>
+            <ol style="font-size: 20px; margin-bottom: 100px;">
+                <li>idk</li>
+                <li>we do stuff</li>
+                <li>hooray!</li>
+            </ol>
+            <h1 style="font-size: 60px; margin-bottom: 100px;">Meet our team!</h1>
+            <div class="team-container">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="images/Deadpool_2_Japan_Premiere_Red_Carpet_Ryan_Reynolds_(cropped).jpg" alt="Team Member 1">
+                    </div>
+                    <div class="member-info">
+                        <p>Ryan Reynolds<br>CEO</p>
+                    </div>
+                </div>
+            
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="images/Deadpool_2_Japan_Premiere_Red_Carpet_Ryan_Reynolds_(cropped).jpg" alt="Team Member 1">
+                    </div>
+                    <div class="member-info">
+                        <p>John Doe<br>Sales</p>
+                    </div>
+                </div>
+            
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="images/Deadpool_2_Japan_Premiere_Red_Carpet_Ryan_Reynolds_(cropped).jpg" alt="Team Member 1">
+                    </div>
+                    <div class="member-info">
+                        <p>Bill Gates<br>Marketing Executive</p>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="images/Deadpool_2_Japan_Premiere_Red_Carpet_Ryan_Reynolds_(cropped).jpg" alt="Team Member 1">
+                    </div>
+                    <div class="member-info">
+                        <p>Kevin Mitnic<br>Title: CEO</p>
+                    </div>
+                </div>
+            <h1 style="font-size: 60px;">Past Projects</h1>
+            <button class="special_button">Dogs!</button>
         </div>
-    
     
         <div id="tab3" class="tab-content">
             <h1>Contact</h1>
@@ -93,10 +132,6 @@
                     </ul>
                 </div>
             </div>
-        </div>
-        <div id="tab4" class="tab-content">
-            <h2>Process</h2>
-            <p>...</p>
         </div>
     </div>
     

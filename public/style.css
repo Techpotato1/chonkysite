@@ -8,6 +8,7 @@ body {
     padding: 0;
     background-color: white;
     color: black;
+    overflow-x: hidden; /* Hide scrollbars */
 }
 
 .container {
@@ -57,6 +58,10 @@ body {
     background-color: white;
     border: 1px solid #555;
     border-top: none;
+    background-image: url('images/background.png');
+    background-size: cover; /* Adjusts the size of the image */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating the image */
 }
 
 .tab-content {
@@ -78,7 +83,7 @@ a:hover {
 
 p{
     font-weight: 400 !important;
-    max-width: 1100px; /* Set the maximum width of the paragraph */
+    max-width: 1500px; /* Set the maximum width of the paragraph */
 }
 
 .my-image {
@@ -99,10 +104,11 @@ p{
   font-size: 75px; /* Adjust the font size as needed */
   flex-grow: 1;
   text-align: left;
-  font-weight:700
+  font-weight:700;
+  cursor: pointer;
 }
 
-button {
+.tab_button {
   position: relative;
   font-size: 17px;
   text-transform: uppercase;
@@ -119,17 +125,18 @@ button {
   margin: 7px; /* Add margin to create space between buttons */
 }
 
-button:hover {
+.tab_button:hover {
  transform: scale(1.07);
  cursor: pointer;
+ letter-spacing: 3px;
 }
 
-button:active {
+.tab_button:active {
   transform: translateY(3px);
   transition: transform 34ms;
 }
 
-button::after {
+.tab_button::after {
  content: "";
  display: inline-block;
  height: 100%;
@@ -142,3 +149,76 @@ button::after {
  transition: all .4s;
  background-color: white;
 }
+
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, minmax(100px, auto)); /* Adjust min-height as needed */
+  gap: 20px;
+}
+
+.team-member {
+  display: flex; /* For image and text layout */
+  flex-direction: rows; /* Stack image and text vertically */
+  align-items: left;
+}
+
+.member-image-wrapper {
+  width: 100%; 
+  overflow: hidden;  
+}
+
+.member-image-wrapper img {
+  width: 100%;
+  height: 180px; /* Adjust height as needed */
+  object-fit: cover; /* Ensure image covers container while maintaining aspect ratio */
+}
+
+.member-info {
+  padding: 15px;
+  text-align: left; /* Align text to the left */
+  flex-grow: 1; /* Allow text to take up remaining space */
+}
+
+.team-member img {
+  width: 120px; /* Adjust image width as needed */
+  height: auto;
+  margin-right: 10px; /* Add space between image and text */
+}
+
+.member-info p {
+    font-size: 20px;
+    text-align: left;
+    width: 100px;
+}
+
+.special_button {
+  padding: 17px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+
+.special_button:hover {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+.special_button:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
