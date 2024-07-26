@@ -14,14 +14,16 @@
 
 <body>
 
-    <div class="tabs">
-        <h1 style="display: flex; color: white; font-size: 75px; justify-content: flex-start !important;">Step Support</h1>
-        <div class="tab active" onclick="openTab(event, 'tab1')">Home</div>
-        <div class="tab" onclick="openTab(event, 'tab3')">Contact</div>
-        <div class="tab" onclick="openTab(event, 'tab4')">Process</div>
-        <div class="tab" onclick="openTab(event, 'tab5')">Schedule</div>
-        <div class="tab" onclick="openTab(event, 'tab6')">Past Projects</div>
-        <div class="tab" onclick="openTab(event, 'tab7')">Team</div>
+    <div class="navbar">
+        <div class="title">Step Support</div>
+        <div class="tabs">
+            <button class="" onclick="openTab(event, 'tab1')">Home</button>
+            <button class="" onclick="openTab(event, 'tab3')">Contact</button>
+            <button class="" onclick="openTab(event, 'tab4')">Process</button>
+            <button class="" onclick="openTab(event, 'tab5')">Schedule</button>
+            <button class="" onclick="openTab(event, 'tab6')">Past Projects</button>
+            <button class="" onclick="openTab(event, 'tab7')">Team</button>
+        </div>
     </div>
 
     <div class="container" style="background-image: url('IMG_0972.png')">
@@ -30,7 +32,7 @@
         -->
         <div id="tab1" class="tab-content active">
             <h1 style="text-align: left; font-size: 60px;">Our Mission:</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            <p class="dynamic-width-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                 et dolore magna
                 aliqua. Morbi non arcu risus quis varius quam. Malesuada bibendum arcu vitae elementum curabitur
                 vitae nunc sed. Nibh
