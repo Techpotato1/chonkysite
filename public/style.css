@@ -119,15 +119,15 @@ button {
   margin: 5px; /* Add margin to create space between buttons */
 }
 
-
 button:hover {
- transform: translateY(-3px);
- box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+ box-shadow: 0px 0px 10px white;
+ transform: scale(1.07);
+ cursor: pointer;
 }
 
 button:active {
- transform: translateY(-1px);
- box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(3px);
+  transition: transform 34ms;
 }
 
 button::after {
@@ -141,13 +141,5 @@ button::after {
  left: 0;
  z-index: -1;
  transition: all .4s;
-}
-
-button::after {
- background-color: #fff;
-}
-
-button:hover::after {
- transform: scaleX(1.4) scaleY(1.6);
- opacity: 0;
+ background-color: white;
 }
