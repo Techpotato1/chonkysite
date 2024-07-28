@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "Motley";
+    src:url("images/MotleyForcesRegular-w1rZ3.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Notes";
+    src:url("images/SummaryNotesRegular-Ea5ln.ttf") format('truetype');
+}
 /* General Styling */
 body {
     font-family: 'Lexend', sans-serif;
@@ -7,8 +16,14 @@ body {
     min-height: 100vh;
     padding: 0;
     background-color: white;
-    color: black;
+    color: #023047;
     overflow-x: hidden; /* Hide scrollbars */
+}
+
+h1{
+  text-shadow: 1px 5px 2px #219EBC;
+  font-family: "Motley", "Lexend";
+  font-weight: 100;
 }
 
 .container {
@@ -82,8 +97,10 @@ a:hover {
 }
 
 p{
-    font-weight: 400 !important;
+    font-weight: 500 !important;
     max-width: 1500px; /* Set the maximum width of the paragraph */
+    font-family: "Notes";
+    font-size: 25px;
 }
 
 .my-image {
@@ -104,8 +121,9 @@ p{
   font-size: 75px; /* Adjust the font size as needed */
   flex-grow: 1;
   text-align: left;
-  font-weight:700;
+  font: weight 1px;
   cursor: pointer;
+  font-family: "Motley";
 }
 
 .tab_button {
