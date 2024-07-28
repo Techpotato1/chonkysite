@@ -99,8 +99,7 @@ a:hover {
 p{
     font-weight: 500 !important;
     max-width: 1500px; /* Set the maximum width of the paragraph */
-    font-family: "Notes";
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .my-image {
